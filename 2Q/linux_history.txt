@@ -1,0 +1,371 @@
+    1  whoami
+    2  mkdir -p Test/Demo{1//3}
+    3  mkdir -pTest/Demo{1..3}
+    4  touch Test/Demo1/index.html1
+    5  cd Test/Demo1
+    6  Test/testdemo1
+    7  cd Test/testdemo1
+    8  clear
+    9  mkdir -p  Test/Demo{1..2}
+   10  touch index.html
+   11  cd ../Demo2
+   12  cd../Demo1
+   13  mkdir -p Test/Dir1/Dir2
+   14  cd Test
+   15  ls -R
+   16  touch Dir1/file1{1..10}
+   17  touch Dir1/dir2/file2_{1..10}
+   18  touch Dir1/Dir2/file2_{1..10}
+   19  cd..
+   20  cd ..
+   21  ls -R
+   22  ls -R Test
+   23  history
+   24  mkdir BasicCommand
+   25  pws
+   26  ls
+   27  cd BasicCommand/
+   28  pwd
+   29  cd..
+   30  Cd..
+   31  cd-
+   32  cd..
+   33  pwd
+   34  cd ..
+   35  ls -al
+   36  clear
+   37  mkdir matalot
+   38  cd matalot/
+   39  pwd
+   40  mkdir matalafolderfiles
+   41  ls -a
+   42  ls -al
+   43  code .
+   44  cd matalafolderfiles/
+   45  code .
+   46  clear
+   47  cat /etc/os-release | grep '^VERSION'
+   48  cat /etc/os-release | grep -E '(^VERSION|NAME)'
+   49  cat /etc/os-release | grep -En '(^VERSION|NAME)'
+   50  clear
+   51  history
+   52  clear
+   53  mkdir Test
+   54  cd Test
+   55  echo xxx > x.txt
+   56  la
+   57  echo "user:$(whoami)"
+   58  echo "Current Version:$(cat /etc/os-release | grep -E '(^VERSION_ID)' | cut -d "=" -f 2)">> os.log
+   59  cat os.log
+   60  echo "OS Name:$(cat /etc/os-release | grep -E '(^VERSION_ID)' | cut -d "=" -f 2)">> os.log
+   61  cat /etc/os-release
+   62  ls
+   63  echo "OS Name:$(cat /etc/os-release | grep -E '(^VERSION_ID)' | cut -d "=" -f 2)">> os.log
+   64  cat os.log
+   65  touch employees.csv
+   66  ls
+   67  echo "ID,name,deapartment,salary" > employees.csv 
+   68  cat >> employees.csv << EOF  
+   69  ID,name,Department,Salary
+   70  1,Jone Doe, ENGINEERING, 70000
+   71  cat employees.csv 
+   72  cat employees.csv 
+   73  cd
+   74  cd ..
+   75  clear
+   76  mksir FilesEdit_Matala
+   77  mkdir FilesEdit_Matala
+   78  cd FilesEdit_Matala/
+   79  cat >employees.csv << EOF
+   80  cd
+   81  cat >employees.csv << EOF
+   82  cd
+   83  ^x
+   84  pwd
+   85  cd FilesEdit_Matala/
+   86  cat > employees.csv << EOF ID,Name,Department,Salary
+   87  1,John Doe,Engineering,70000
+   88  2,Jane Smith,HR,55000 
+   89  3,Bob Johnson,Finance,60000 
+   90  4,Alice Davis,Engineering,80000 
+   91  5,Chris Wilson,Marketing,45000 
+   92  6,Karen Taylor,Finance,62000 
+   93  7,Paul Brown,Engineering,75000 
+   94  EOF
+   95  cat employees.csv 
+   96  ls
+   97  cat employees.csv 
+   98  cat > employees.csv << EOFID,Name,Department,Salary
+   99  1,John Doe,Engineering,70000
+  100  2,Jane Smith,HR,55000
+  101  3,Bob Johnson,Finance,60000
+  102  4,Alice Davis,Engineering,80000
+  103  5,Chris Wilson,Marketing,45000
+  104  6,Karen Taylor,Finance,62000
+  105  7,Paul Brown,Engineering,75000
+  106  EOF
+  107  cat > employees.csv << EOFID,Name,Department,Salary
+  108  1,John Doe,Engineering,70000
+  109  2,Jane Smith,HR,55000
+  110  3,Bob Johnson,Finance,60000
+  111  4,Alice Davis,Engineering,80000
+  112  5,Chris Wilson,Marketing,45000
+  113  6,Karen Taylor,Finance,62000
+  114  7,Paul Brown,Engineering,75000
+  115  EOF
+  116  cat
+  117  cd FilesEdit_Matala/
+  118  cat > employees.csv << EOF
+  119  ID,Name,Department,Salary
+  120  1,John Doe,Engineering,70000
+  121  2,Jane Smith,HR,55000 
+  122  3,Bob Johnson,Finance,60000 
+  123  4,Alice Davis,Engineering,80000 
+  124  5,Chris Wilson,Marketing,45000 
+  125  6,Karen Taylor,Finance,62000 
+  126  7,Paul Brown,Engineering,75000 
+  127  EOF
+  128  cat employees.csv 
+  129  cut -d',' -f2 employees.csv 
+  130  cut -d',' -f2 employees.csv >> output.txt
+  131  echo "-----------" >> output.txt 
+  132  cut -d',' -f3,4 employees.csv >> output.txt
+  133  cat output.txt 
+  134  echo "-----------" >> output.txt 
+  135  grep Engineering employees.csv 
+  136  grep Engineering employees.csv  >> output.txt 
+  137  cut -d',' -f3 employees.csv | uniq -c
+  138  cut -d',' -f3 employees.csv |sort | uniq -c
+  139  cut -d',' -f3 employees.csv |sort | uniq -c >> output.txt 
+  140  echo "-----------" >> output.txt 
+  141  ls
+  142  echo "8,ellafrank,Marketing,84769387" >> employees.csv 
+  143  cat employees.csv 
+  144  history 
+  145  mkdir TestTar && cd TestTar
+  146  toch file _{1-50}
+  147  history
+  148  mkdir Matala_Tar
+  149  code Matala_Tar/
+  150  mkdir files
+  151  touch files/txt1.txt
+  152  cd files
+  153  cd
+  154  atp search figlet
+  155  apt search figlet
+  156  apt show figlet
+  157  sudo apt install figlet
+  158  which figlet
+  159  figlet BIOINFORMATICSELLA
+  160  sudo apt install cowsay
+  161  shgf
+  162  show cowsay
+  163  cowsay ellafrank
+  164  sudo apt install fortune
+  165  fortune what a happy life
+  166  fortune
+  167  sudo apt install nnn
+  168  sudo apt install cmatrix
+  169  sudo apt install htop
+  170  wich python3
+  171  which python3
+  172  mkdir pythonscript
+  173  cd pythonscript/
+  174  code .
+  175  sudo apt update && sudo apt upgrade -y
+  176  sudo apt update
+  177  sudo apt update && sudo apt upgrade -y
+  178  mkdir bashscripting
+  179  code bashscripting/
+  180  cd ~/Work_Course_Linux 
+  181  git status
+  182  git init
+  183  git status
+  184  echo -e "name: ellafrank\nID: 208235549" > ~/.myid
+  185  ls -la ~ | grep .myid
+  186  git commit -m "START"
+  187  git config --global user.name "Ella Frank"
+  188  git config --global user.email "ella004433@gmail.com"
+  189  git config --global --list
+  190  git add ~/.myid
+  191  git commit -m "START"
+  192  mv ~/.myid ~/Work_Course_Linux/.myid
+  193  cd ~/Work_Course_Linux
+  194  git add .myid
+  195  git commit -m "START"
+  196  git log --oneline
+  197  mkdir ~/Work_Course_Linux/DOWNLOADS
+  198  ls -la ~/Work_Course_Linux
+  199  wget -O ~/Work_Course_Linux/gz.tar.downloads https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+  200  ls -la ~/Work_Course_Linux
+  201  tar -xzf ~/Work_Course_Linux/gz.tar.downloads -C ~/Work_Course_Linux/DOWNLOADS
+  202  ls -la ~/Work_Course_Linux/DOWNLOADS
+  203  rm ~/Work_Course_Linux/gz.tar.downloads
+  204  ls -la ~/Work_Course_Linux
+  205  cd ~/Work_Course_Linux
+  206  git add .
+  207  git commit -m "Added extracted files to DOWNLOADS and removed the compressed file"
+  208  git log --oneline
+  209  mkdir ~/Work_Course_Linux/DATA ~/Work_Course_Linux/CODE
+  210  ls -la ~/Work_Course_Linux
+  211  cp ~/Work_Course_Linux/DOWNLOADS/*.c ~/Work_Course_Linux/DOWNLOADS/*.cpp ~/Work_Course_Linux/CODE 2>/dev/null
+  212  ls -la ~/Work_Course_Linux/CODE
+  213  cp ~/Work_Course_Linux/DOWNLOADS/*.{txt,jpg,csv} ~/Work_Course_Linux/DATA 2>/dev/null
+  214  cp ~/Work_Course_Linux/DOWNLOADS/*.c ~/Work_Course_Linux/DOWNLOADS/*.cpp ~/Work_Course_Linux/CODE2>/dev/null
+  215  ls -la ~/Work_Course_Linux/DOWNLOADS/*.c ~/Work_Course_Linux/DOWNLOADS/*.cpp 2>/dev/null
+  216  find ~/Work_Course_Linux/DOWNLOADS -maxdepth 1 \( -name "*.c" -o -name "*.cpp" \) -exec cp {} ~/Work_Course_Linux/CODE \;
+  217  cp ~/Work_Course_Linux/DOWNLOADS/*.{txt,jpg,csv} ~/Work_Course_Linux/DATA 2>/dev/null
+  218  find ~/Work_Course_Linux/DOWNLOADS -maxdepth 1 \( -name "*.txt" -o -name "*.jpg" -o -name "*.csv" \) -exec cp {} ~/Work_Course_Linux/DATA \;
+  219  find ~/Work_Course_Linux/DOWNLOADS -maxdepth 1 \( -name "*.c" -o -name "*.cpp" \) -exec cp {} ~/Work_Course_Linux/CODE \;
+  220  git checkout -b 1_question
+  221  mkdir ~/Work_Course_Linux/1Q
+  222  echo "Time : $(date)" > ~/Work_Course_Linux/1Q/txt.output_1q
+  223  echo "USER DETAILS: $(whoami)" >> ~/Work_Course_Linux/1Q/txt.output_1q
+  224  echo "REPO: $(pwd)" >> ~/Work_Course_Linux/1Q/txt.output_1q
+  225  echo "BRANCH: $(git branch --show-current)" >> ~/Work_Course_Linux/1Q/txt.output_1q
+  226  echo "VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d'=' -f2 | tr -d '"')" >> ~/Work_Course_Linux/1Q/txt.output_1q
+  227  echo "-------------------------------------------" >> ~/Work_Course_Linux/1Q/txt.output_1q
+  228  ls -R ~/Work_Course_Linux >> ~/Work_Course_Linux/1Q/txt.output_1q
+  229  git add .
+  230  git commit -m "Added 1Q folder and txt.output_1q file"
+  231  git checkout master
+  232  git log --oneline > ~/Work_Course_Linux/log.commits_git
+  233  git push origin master
+  234  git remote -v
+  235  git remote add origin https://github.com/ellafrank1998/Work_Course_Linux.git
+  236  git remote -v
+  237  git push -u origin master
+  238  git remote add origin https://github.com/ellafrank1998/bioinfo.git
+  239  git branch -M main
+  240  git push -u origin main
+  241  git remote set-url origin https://github.com/ellafrank1998/Work_Course_Linux.git
+  242  git remote -v
+  243  git push -u origin master
+  244  git remote set-url origin https://github.com/ellafrank1998/Work_Course_Linux.git
+  245  git pull --rebase origin master
+  246  git remote add origin https://github.com/ellafrank1998/Work_Course_Linux.git
+  247  git branch -M master
+  248  git push -u origin master
+  249  git remote set-url origin git@github.com:ellafrank1998/Work_Course_Linux.git
+  250  ssh -T git@github.com
+  251  git remote set-url origin https://github.com/ellafrank1998/Work_Course_Linux.git
+  252  git remote -v
+  253  git branch -M master
+  254  git push -u origin master
+  255  git remote add origin https://github.com/ellafrank1998/Work_Course_Linux..git
+  256  git branch -M main
+  257  git push -u origin main
+  258  it remote add origin https://github.com/ellafrank1998/Work_Course_Linux..git
+  259  git branch -M main
+  260  git push -u origin main
+  261  git push -u origin master
+  262  git remote add origin https://github.com/ellafrank1998/Work_Course_Linux..git
+  263  git branch -M main
+  264  git push -u origin main
+  265  cp DOWNLOAD/*.{py,c,cpp,java,sh} CODE/
+  266  cp DOWNLOAD/*.{py,c,cpp,java,sh} CODE/LINUX_COURSE_WORK-downloads
+  267  cd ..
+  268  mv Work_Course_Linux LINUX_COURSE_WORK-downloads
+  269  mv LINUX_COURSE_WORK-downloads Work_Course_Linux
+  270  cd..
+  271  cd ..
+  272  mv LINUX_COURSE_WORK-downloads Work_Course_Linux
+  273  find /home -type d -name "LINUX_COURSE_WORK-downloads" 2>/dev/null
+  274  cd /path/to/folder
+  275  clear
+  276  echo -e "name: ella frank\nID: 208235549" > .myid
+  277  cat .myid
+  278  cd /path/to/directory
+  279  cd ~
+  280  git init
+  281  git add .myid
+  282  ls -la
+  283  echo -e "name: ella frank\nID: 208235549" > .myid
+  284  pwd
+  285  cd/
+  286  cd Work_Course_Linux
+  287  git add .myid
+  288  mkdir DOWNLOADS
+  289  wget -O ~/Work_Course_Linux/REPOSITORY/gz.tar.downloads https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+  290  mkdir -p ~/Work_Course_Linux/REPOSITORY
+  291  wget -O ~/Work_Course_Linux/REPOSITORY/gz.tar.downloads https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+  292  ls -la ~/Work_Course_Linux/REPOSITORY
+  293  tar -xvf REPOSITORY/gz.tar.downloads -C DOWNLOADS
+  294  rm ~/Work_Course_Linux/REPOSITORY/gz.tar.downloads
+  295  git add .
+  296  git commit -m "Extracted files to DOWNLOADS and deleted gz.tar.downloads"
+  297  mkdir -p ~/Work_Course_Linux/REPOSITORY/DATA ~/Work_Course_Linux/REPOSITORY/CODE
+  298  cp ~/Work_Course_Linux/DOWNLOADS/*.{c,cpp,py,sh,java,js,html,css} ~/Work_Course_Linux/REPOSITORY/CODE 2>/dev/null
+  299  ls -la ~/Work_Course_Linux/REPOSITORY/CODE
+  300  cp ~/Work_Course_Linux/DOWNLOADS/*.{c,cpp,py,sh,java,js,html,css} ~/Work_Course_Linux/REPOSITORY/CODE 2>/dev/null
+  301  cp ~/Work_Course_Linux/DOWNLOADS/*.{c,cpp,py,js,java,sh} ~/Work_Course_Linux/REPOSITORY/CODE 2>/dev/null
+  302  find ~/Work_Course_Linux/DOWNLOADS -type f \( -name "*.c" -o -name "*.cpp" -o -name "*.py" -o -name "*.js" -o -name "*.java" -o -name "*.sh" \) -exec cp {} ~/Work_Course_Linux/REPOSITORY/CODE \;
+  303  find ~/Work_Course_Linux/DOWNLOADS -type f \( -name "*.txt" -o -name "*.jpg" -o -name "*.csv" \) -exec cp {} ~/Work_Course_Linux/REPOSITORY/DATA \;
+  304  Create a new branch called 1_question and switch to this branch
+  305  git checkout -b 1_question
+  306  git switch 1_question
+  307  mkdir 1Q
+  308  ls -ld 1Q
+  309  rm -r 1Q
+  310  mkdir 1Q
+  311  echo -e "Time : $(date)\n\
+  312  USER DETAILS: $(grep "^$(whoami):" /etc/passwd)\n\
+  313  REPO: $(pwd)\n\
+  314  BRANCH: $(git branch --show-current)\n\
+  315  VERSIONID: $(grep '^VERSION_ID=' /etc/os-release | cut -d '=' -f2 | tr -d '\"')\n\
+  316  -------------------------------------------\n\
+  317  $(ls -R)" > ~/Work_Course_Linux/1Q/txt.output_1q
+  318  git add 1Q/txt.output_1q
+  319  git commit -m "Added txt.output_1q with system details"
+  320  git add 1Q/txt.output_1q
+  321  git commit -m "Added txt.output_1q with system details"
+  322  git checkout main
+  323  git merge 1_question
+  324  rm -rf .git
+  325  git checkout -b 2_question
+  326  git checkout -b backup_before_clear
+  327  rm -rf .git                 # Delete the entire Git history
+  328  git init                    # Reinitialize Git
+  329  git add .                   # Stage all existing files
+  330  git commit -m "Reset repository and cleared history"  # Make a new initial commit
+  331  git log --oneline
+  332  ~/
+  333  cd ..
+  334  mkdir Q2_ENV
+  335  cd ~/Work_Course_Linux/Q2_ENV
+  336  mkdir -p ~/Work_Course_Linux/Q2_ENV
+  337  cd ~/Work_Course_Linux/Q2_ENV
+  338  python3 -m venv venv
+  339  apt install python3.12-venv
+  340  sudo apt update
+  341  sudo apt install python3-venv -y
+  342  sudo apt update
+  343  sudo apt install python3-venv -y
+  344  cd ~/Work_Course_Linux/Q2_ENV
+  345  python3 -m venv venv
+  346  source venv/Scripts/activate
+  347  source venv/bin/activate
+  348  which python
+  349  pip install numpy
+  350  mkdir -p 2Q
+  351  cd ~/Work_Course_Linux
+  352  mkdir -p 2Q
+  353  cp ~/Work_Course_Linux/Q2_ENV/py1.py ~/Work_Course_Linux/2Q/
+  354  find ~/Work_Course_Linux -type f -name "py1.py"
+  355  cp /correct/path/to/py1.py ~/Work_Course_Linux/2Q/
+  356  find ~/Work_Course_Linux -type f -name "py1.py" 2>/dev/null
+  357  cp ~/Work_Course_Linux/DOWNLOADS/LINUX_COURSE_WORK-downloads/py1.py ~/Work_Course_Linux/2Q/
+  358  ls -la ~/Work_Course_Linux/2Q
+  359  chmod +rwx ~/Work_Course_Linux/2Q/py1.py
+  360  python3 ~/Work_Course_Linux/2Q/py1.py > ~/Work_Course_Linux/2Q/txt.output_2q 2>&1
+  361  cat ~/Work_Course_Linux/2Q/txt.output_2q
+  362  cd ~/Work_Course_Linux/2Q
+  363  pip freeze > requirements.txt
+  364  import os
+  365  os.system("pip install -r requirements.txt")
+  366  pip install -r requirements.txt
+  367  nano py1.py
+  368  y
+  369  python3 py1.py >> txt.output_2q 2>&1
+  370  cat txt.output_2q
+  371  history > ~/Work_Course_Linux/2Q/linux_history.txt
