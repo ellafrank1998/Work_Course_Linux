@@ -1,0 +1,41 @@
+Time : Sun Mar  2 10:48:33 IST 2025
+USER DETAILS: ella:x:1000:1000:,,,:/home/ella:/bin/bash
+REPO: /home/ella/Work_Course_Linux
+BRANCH: 1_question
+VERSIONID: 24.04
+-------------------------------------------
+.:
+1Q
+DOWNLOADS
+REPOSITORY
+
+./1Q:
+
+./DOWNLOADS:
+LINUX_COURSE_WORK-downloads
+
+./DOWNLOADS/LINUX_COURSE_WORK-downloads:
+FIle_1.txt
+File_2.txt
+img1.jpg
+img2.jpg
+img3.jpg
+plant.py
+plants.csv
+py1.py
+
+./REPOSITORY:
+CODE
+DATA
+
+./REPOSITORY/CODE:
+plant.py
+py1.py
+
+./REPOSITORY/DATA:
+FIle_1.txt
+File_2.txt
+img1.jpg
+img2.jpg
+img3.jpg
+plants.csv
