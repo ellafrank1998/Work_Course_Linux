@@ -1,0 +1,11 @@
+Select an option:
+1. CREATE CSV by name
+2. Display all CSV DATA with row INDEX
+3. Read user input for new row
+4. Read Species (OT for example) and Display all Items of that species type and the AVG weight
+5. Read Species sex (M/F) and display all items of species-sex
+6. Save last output to a new CSV file
+7. Delete row by row index
+8. Update weight by row index
+9. Exit
+Exiting...
